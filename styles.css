@@ -1,0 +1,39 @@
+div {
+    display: block;
+}
+
+.banner *{ 
+    border-bottom: solid 2px black;
+    text-align: center;
+    margin: auto 0px;
+    padding: 20px;
+    background: linear-gradient(to left top, rgb(248, 193, 11), rgb(221, 82, 2));
+    background-size: cover;
+}
+
+.container{
+    border: solid 1px gray;
+    margin: 10px auto;
+}
+
+.color-label {
+    display: inline-block;
+    border: solid 2px black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    min-height: 50px;
+    min-width: 50px;
+}
+.ivory{
+    background-color: rgb(255, 255, 241);
+}
+
+.navy {
+    background-color: rgb(3, 3, 88);
+    color: white;
+}
+
+.sunflower {
+    background-color: rgb(255, 230, 0);
+}
