@@ -4,6 +4,10 @@
   <head>
     <title>Web Design Guide</title>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,400&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
  
   <body>
@@ -20,29 +24,74 @@
         <p>Background 2</p>
         Dark Navy: rgb(3, 3, 88)</div>
        <div class="color-label sunflower">
-        <p>Buttons, Links</p>
+        <p>Buttons</p>
         Sunflower: rgb(255, 230, 0)</div>
     </div>
 
     <div class="container">
       <h1>Buttons</h1>
       <button>Don't look at me! I'm hideous!</button>
-      <p>This is an unstyled HTML button, never send a button out in publi without makeup</p>
+      <p class="text-container">This is an unstyled HTML button, never send a button out in public without makeup</p>
 
       <button class="std-button">Look at me, I am a pretty button!</button>
-      <p>Standard button design, looks clickable. Add X css elements to indicate clickability</p>
-
-      <button class="real-button">Don't I look real?</button>
-      <p>This is called... something I don't remember. Note to self, look up the term. Design to make the button look real.
+      <p class="text-container">Standard button design, looks clickable. Add CSS elements to indicate clickability
+        The Sunflower color is a unique background color in most cases, and yellow pops out to
+        a user. <strong>border-radius: 25px</strong> should be the standard rounding for buttons if they are rounded.
+        Color change to <strong>rgb(182, 164, 4)</strong> when the button is clicked.
       </p>
     </div>
 
     <div class="container">
       <h1>Fonts</h1>
+      <div class="text-container side-by-side">
+        <h2 style="text-decoration: underline;">Crimson Pro</h2>
+        <p style="font-family: 'Crimson Pro', serif;">The quick brown fox jumped over the lazy dog</p>
+        <p style="font-family: 'Crimson Pro', serif; font-weight: bold;">The quick brown fox jumped over the lazy dog</p>
+        <p style="font-family: 'Crimson Pro', serif; font-style: italic;">The quick brown fox jumped over the lazy dog</p>
+      </div>
+      <div class="text-container side-by-side">
+        <h2 style="text-decoration: underline;">Lato, Regular</h2>
+        <p style="font-family: 'Lato', sans-serif;">The quick brown fox jumped over the lazy dog</p>
+        <p style="font-family: 'Lato', sans-serif; font-weight: bold;">The quick brown fox jumped over the lazy dog</p>
+        <p style="font-family: 'Lato', sans-serif; font-style: italic;">The quick brown fox jumped over the lazy dog</p>
+      </div>
     </div>
 
     <div class="container">
       <h1>Text Style</h1>
+
+      <h1 style="text-decoration: underline;">h1: Headings</h1>
+      <ul class="table">
+        <li>font-family: 'Crimson Pro, serif;</li>
+        <li>font-weight: 700;</li>
+        <li>font-size: 35px;</li>
+      </ul>
+
+      <h2 style="text-decoration: underline;">h2: Subheadings</h2>
+      <ul class="table">
+        <li>font-family: 'Crimson Pro, serif;</li>
+        <li>font-weight: 500;</li>
+        <li>font-size: 30px;</li>
+      </ul>
+
+      <h3 style="text-decoration: underline;">h3: Content Titles</h3>
+      <ul class="table">
+        <li>font-family: 'Crimson Pro, serif;</li>
+        <li>font-weight: 400;</li>
+        <li>font-size: 28px;</li>
+      </ul>
+
+      <p style="font-weight: bold; text-decoration: underline;">All other Text</p>
+      <ul class="table">
+        <li>font-family: 'Lato, sans-serif;</li>
+        <li>font-weight: 700;</li>
+        <li>font-size: 35px;</li>
+      </ul>
+
+      <p>
+        <strong>Note: </strong>
+        <em>Regardless, all subheadings and titles should be in the same font family, while all descriptive text should be in a different family.</em>
+      </p>
     </div> 
   </body>
 </html>
